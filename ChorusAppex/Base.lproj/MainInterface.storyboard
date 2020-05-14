@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mani View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ManiViewController" customModule="ManiFramework" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmn-Rv-pWb" userLabel="container">
+                                <rect key="frame" x="128" y="523" width="768" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="dVv-5n-EhC">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="320"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3j-Vo-ifK" customClass="RotaryControl" customModule="ManiFramework">
+                                        <rect key="frame" x="264" y="56" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3kI-yg-DSn" customClass="RotaryControl" customModule="ManiFramework">
+                                        <rect key="frame" x="424" y="56" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ws2-cn-RP0" customClass="RotaryControl" customModule="ManiFramework">
+                                        <rect key="frame" x="568" y="56" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Rt-k9-fvC" customClass="SwitchControl" customModule="ManiFramework">
+                                        <rect key="frame" x="108" y="72" width="40" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s2S-lp-wfB" customClass="SwitchControl" customModule="ManiFramework">
+                                        <rect key="frame" x="172" y="72" width="40" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dVv-5n-EhC" firstAttribute="top" secondItem="nmn-Rv-pWb" secondAttribute="top" id="2Xu-aG-ZNK"/>
+                                    <constraint firstAttribute="trailing" secondItem="dVv-5n-EhC" secondAttribute="trailing" id="Lbp-Hq-Vgh"/>
+                                    <constraint firstAttribute="width" constant="768" id="QLJ-Ig-p8h"/>
+                                    <constraint firstItem="dVv-5n-EhC" firstAttribute="leading" secondItem="nmn-Rv-pWb" secondAttribute="leading" id="X4n-jg-t8k"/>
+                                    <constraint firstAttribute="height" constant="320" id="bR1-Fo-AP3"/>
+                                    <constraint firstAttribute="bottom" secondItem="dVv-5n-EhC" secondAttribute="bottom" id="dHn-fO-cAH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nmn-Rv-pWb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KKY-bs-aOV"/>
+                            <constraint firstItem="nmn-Rv-pWb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vFR-VC-LX7"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="1366"/>
+                    <connections>
+                        <outlet property="delayControl" destination="s2S-lp-wfB" id="nrZ-iV-sFn"/>
+                        <outlet property="depthControl" destination="Ws2-cn-RP0" id="Jxl-16-FlW"/>
+                        <outlet property="feedbackControl" destination="7Rt-k9-fvC" id="6Mz-gh-5wE"/>
+                        <outlet property="mixControl" destination="B3j-Vo-ifK" id="bRu-SS-bm0"/>
+                        <outlet property="rateControl" destination="3kI-yg-DSn" id="S0t-SS-na3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.875" y="-61.054172767203511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="768" height="320"/>
+    </resources>
+</document>
